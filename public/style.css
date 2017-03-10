@@ -1,8 +1,93 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font: 13px Helvetica, Arial; }
-form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
-form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
-form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
-#messages { list-style-type: none; margin: 0; padding: 0; }
-#messages li { padding: 5px 10px; }
-#messages li:nth-child(odd) { background: #eee; }
+html {
+	width: 100%;
+}
+* { 
+	height: calc(100% - 40px);
+	margin: 0; 
+	padding: 0; 
+	box-sizing: 
+	border-box; 
+}
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font: 13px Helvetica, Arial; 
+}
+form { 
+	height: 40px;
+	background: #ccc; 
+	padding: 3px; 
+	position: fixed; 
+	bottom: 0; 
+	width: 100%; 
+}
+form input { 
+	height: auto;
+	border: 0; 
+	padding: 10px;
+	width: 90%; 
+	margin-right: .5%; 
+}
+form button { 
+	height: 30px;
+	width: 9%; 
+	background: rgb(130, 224, 255); 
+	border: none; 
+	padding: 5px; 
+}
+#greeting {
+	padding: 7px;
+	vertical-align: center;
+	font-size: 14px;
+	height: 30px;
+}
+#centre-block {
+	width: 100%;
+	display: inline-block;
+}
+#user-list-block {
+	height: 100%;
+	width: 20%;
+	float: left;
+	background-color: #dddddd;
+}
+#user-list {
+	height:auto;
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: auto;
+	list-style-type: none;
+}
+#user-list li {
+	word-wrap: break-word;
+	min-height: 20px;
+	padding: 5px 10px; 
+}
+#message-block {
+	float: left;
+	padding-bottom: 10px;
+	display: flex;
+	align-items: flex-end;
+	width: 75%;
+	height: 100%;
+}
+
+#messages {
+	overflow-y: auto;
+	overflow-x: auto;
+	width: 100%;
+	max-height: 100%;
+	height:auto;
+	list-style-type: none;
+	margin: 0; 
+	padding: 0;
+}
+#messages li {
+	word-wrap: break-word; 
+	min-height: 20px;
+	padding: 5px 10px; 
+}
+#messages li:nth-child(odd) { 
+	background: #eee; 
+}
