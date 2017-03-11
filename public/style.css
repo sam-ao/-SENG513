@@ -37,10 +37,12 @@ form button {
 	padding: 5px; 
 }
 #greeting {
+	background: #90FFEA;
 	padding: 7px;
 	vertical-align: center;
 	font-size: 14px;
-	height: 30px;
+	min-height: 30px;
+	height: auto;
 }
 #centre-block {
 	width: 100%;
@@ -88,6 +90,6 @@ form button {
 	min-height: 20px;
 	padding: 5px 10px; 
 }
-#messages li:nth-child(odd) { 
+#messages li:nth-child(even) { 
 	background: #eee; 
 }
